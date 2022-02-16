@@ -75,7 +75,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 container">
+            <div class="row">
+                <div class="col-12">
+                    @include('messages.bootstrap.messages')
+                </div>
+            </div>
             @yield('content')
         </main>
     </div>
